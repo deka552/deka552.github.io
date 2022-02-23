@@ -4,8 +4,48 @@
 </head>
 <body>
     <p1> RoboProjects</p1>
-         <p style="text-align: center;"><img alt="" src="Lesson31.01.2022.jpg" style="width: 60%;" /></p> 
-         <p style="text-align: center;"><img alt="" src="Circuit1.jpg" style="width: 60%;" /></p> 
+     #include <avr/io.h>
+    #include <util/delay.h>
+
+            int main(void)
+            {
+              DDRC = 0xFF;  //0b11111111
+              PORTC = 0x00; //0b00000000
+              while(1)
+                {
+                  PORTC = 0b00000000;
+                  _delay_ms(100);
+                  PORTC = 0b00000101;
+                  _delay_ms(100);
+                  PORTC = 0b00000010;
+                  _delay_ms(100);
+                  PORTC = 0b00000101;
+                  _delay_ms(100);
+                  }
+
+              }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p style="text-align: center;"><img alt="" src="Lesson31.01.2022.jpg" style="width: 60%;" /></p> 
+     <p style="text-align: center;"><img alt="" src="Circuit1.jpg" style="width: 60%;" /></p> 
      <p style="text-align: center;"><img alt="" src="Circuit2.jpg" style="width: 60%;" /></p> 
      <p style="text-align: center;"><img alt="" src="Circuit3.jpg" style="width: 80%;" /></p> 
     <p style="text-align: center;"><img alt="" src="Cir1.jpg" style="width: 80%;" /></p>  
